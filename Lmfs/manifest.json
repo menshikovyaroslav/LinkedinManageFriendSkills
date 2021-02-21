@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Linkedin Manage Friend Skills",
+	"permissions": [
+		"tabs"
+	],
+	"description": "Linkedin Manage Friend Skills",
+	"version": "1.0.0",
+	"content_scripts": [
+	{
+		"matches": ["*://www.linkedin.com/*"],
+		"js": ["content.js"]
+	}
+	],
+	"icons": {"128": "icon_128.png"},
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	}
+}
